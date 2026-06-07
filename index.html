@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Monthsary, Love!</title>
+    <!-- Idinugtong natin dito ang hiwalay mong CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font mula sa Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- ================= LOCK SCREEN ================= -->
+        <div id="lock-screen">
+            <div class="gift-icon">🎁💖</div>
+            <h2>Special Surprise</h2>
+            <p>Enter our monthsary to unlock your gift:</p>
+            <input type="date" id="birthdate-input">
+            <br>
+            <button onclick="checkBirthdate()">Unlock My Gift</button>
+        </div>
+
+        <!-- ================= MAIN CONTENT ================= -->
+        <div id="main-content">
+            <h1>Happy Monthsary, Love! 🎂</h1>
+            <p style="font-style: italic;">To My Beautiful Girlfriend</p>
+            <p>On this special day, I celebrate you and all the beautiful moments we've shared together.</p>
+
+            <hr style="border: 1px solid #fff0f3; margin: 20px 0;">
+
+            <!-- Cake Section -->
+            <div class="cake-section">
+                <div class="cake" id="cake-emoji">🎂</div>
+                <h3 id="cake-instruction">Make a Wish! ✨</h3>
+                <p style="font-size: 14px; margin-bottom: 10px;">Blow out the candle and make this year magical!</p>
+                <button id="blow-btn" onclick="blowCandle()">🌬️ Blow the Candle</button>
+            </div>
+
+            <!-- Our Love Story -->
+            <h2>📖 Our Love Story</h2>
+            <div class="story-box">
+                <p><strong>From the First Day:</strong> You walked into my life and made every moment special. From that first hello to today, you've been my greatest blessing.</p>
+            </div>
+            <div class="story-box">
+                <p><strong>Growing Together:</strong> Every day with you is an adventure. Through laughter, dreams, and memories, we continue to build something beautiful.</p>
+            </div>
+            <div class="story-box">
+                <p><strong>Forever and Always:</strong> Today is our special day, but every day is special because you're in my life. Happy Monthsary to my everything! 💚</p>
+            </div>
+
+            <!-- Time Counter -->
+            <h2>⏳ Time Since You Said "YES"</h2>
+            <div class="timer-container">
+                <div class="time-box"><span id="days">00</span>Days</div>
+                <div class="time-box"><span id="hours">00</span>Hours</div>
+                <div class="time-box"><span id="mins">00</span>Mins</div>
+                <div class="time-box"><span id="secs">00</span>Secs</div>
+            </div>
+
+            <!-- Precious Memories (Photos) -->
+            <h2>📸 Our Precious Memories</h2>
+            <div class="photo-grid">
+                <!-- Siguraduhing kasama ang mga larawang ito sa folder mo -->
+                <img src="68cc9aee-9bce-4f2c-b8ca-43f7bc667a35.jpg">
+                <img src="58a868ae-4eab-4ce4-ae61-9984a7beefd7.jpg">
+                <img src="04958479-6665-4d33-90f4-0df44db77811.jpg">
+                <img src="57b865d6-8321-438b-a2df-3336a3dc0e57.jpg">
+            </div>
+
+            <!-- Love Letter Button -->
+            <button style="margin-top: 20px; font-size: 18px;" onclick="openLetter()">❤️ Click to open my love letter</button>
+        </div>
+
+    </div>
+
+    <!-- ================= LOVE LETTER MODAL ================= -->
+    <div id="letter-modal" class="modal">
+        <div class="modal-content">
+            <h2 style="color: #ff4d6d;">You Are Loved! 💝</h2>
+            <p style="text-align: left; margin-top: 15px;">
+                First of all, I just want to thank you for your love, care, and all the little moments that make my days brighter. You've been such a blessing in my life...
+                <br><br>
+                Every single day with you feels like a dream come true. You make my heart skip a beat, my face light up with a smile, and my life infinitely better. Thank you for being you!
+                <br><br>
+                I love you so much! Happy Monthsary Love 💖
+            </p>
+            <button class="close-btn" onclick="closeLetter()">Close & Open Again</button>
+        </div>
+    </div>
+
+    <!-- Idinugtong natin dito ang hiwalay mong JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
